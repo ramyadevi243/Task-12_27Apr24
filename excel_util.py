@@ -35,7 +35,7 @@ def write_to_excel(xl_filepath, test_data, test_result):
                 test_data[2]:
             # Write the Date and Time in separate columns
             # returns the reference of column 4 in same row as test_id_cell
-            date_cell = sheet.cell(row=test_id_cell.row.row, column=4)
+            date_cell = sheet.cell(row=test_id_cell.row, column=4)
             time_cell = sheet.cell(row=test_id_cell.row, column=5)
 
             # Stores the date value into the cell
