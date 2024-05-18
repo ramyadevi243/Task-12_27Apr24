@@ -30,9 +30,9 @@ def write_to_excel(xl_filepath, test_data, test_result):
         test_id_cell = row[0]
         username_cell = row[1]
         password_cell = row[2]
-        #
-        if test_id_cell.value == test_data[0] and username_cell.value == test_data[1] and password_cell.value == \
-                test_data[2]:
+
+        # Checks if the values in the current row of the Excel sheet match the corresponding values in the test_data tuple.
+        if test_id_cell.value == test_data[0] and username_cell.value == test_data[1] and password_cell.value == test_data[2]:
             # Write the Date and Time in separate columns
             # returns the reference of column 4 in same row as test_id_cell
             date_cell = sheet.cell(row=test_id_cell.row, column=4)
